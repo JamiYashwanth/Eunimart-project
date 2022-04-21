@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Card from './components/Card';
+import HomePage from './components/Homepage';
+import { Navigate,Route,Routes  } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+const  App = () => {
+  const id = window.location.pathname.split('/')[2];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Navigate from='/' to='/users' />} />
+          <Route path='/users' element={<HomePage />} />
+          <Route path={`/users/${id}`} element={<Card />} />
+
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

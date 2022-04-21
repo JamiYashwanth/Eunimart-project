@@ -1,0 +1,16 @@
+.text{
+    text-decoration: none;
+    font-size: 30px;
+    list-style: none;
+}
+
+.home{
+    display: flex;
+}
+
+.cardpice{
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+    margin: 10px
+}

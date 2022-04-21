@@ -1,0 +1,14 @@
+.data{
+    height: 350px;
+    width: 300px;
+    margin : 30px;
+    border-radius: 10px;
+    color: white;
+    padding-top: 10px;
+    background: linear-gradient(to right bottom, #001845, #002855);
+}
+
+.display1{
+    display: flex;
+    margin: auto;
+}
