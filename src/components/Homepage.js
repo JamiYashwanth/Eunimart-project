@@ -23,18 +23,18 @@ export default function HomePage(props) {
 
 
   return (
-    <div >
+    <div className="block">
+        <h1 className="users">Users</h1>
+        <div classname="home">
         {users.map((user) => {
           return (
-            <div classname="home">
-            <li className="text">
               <div className="cardpice">
-                  <Link onClick={<Card/>} to={`/users/${user.id}`} className="text"> {user.first_name} </Link>
-                </div>
-            </li>
-            </div>
+                <div classname="display3" className="text">{user.first_name}</div>
+                <Link onClick={<Card/>} to={`/users/${user.id}`} className="text1"> <div className="know">Know more!!!</div> </Link>
+              </div>
           );
         })}
+        </div>
     </div>
   );
 }

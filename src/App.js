@@ -13,7 +13,6 @@ const  App = () => {
           <Route path='/' element={<Navigate from='/' to='/users' />} />
           <Route path='/users' element={<HomePage />} />
           <Route path={`/users/${id}`} element={<Card />} />
-
         </Routes>
       </div>
     </BrowserRouter>
