@@ -3,17 +3,19 @@
     font-size: 20px;
     text-align: center;
     justify-content: center;
+    color: #b8c0ff;
 }
 
 .text{
     font-size: 32px;
+    color: #6930c3;
 }
 
 .know{
     width: 40%;
     margin: auto;
     background-color: #9381ff;
-    border-radius: 10px;
+    border-radius: 5px;
     height: 35%;
     margin-top: 10px;
 }
